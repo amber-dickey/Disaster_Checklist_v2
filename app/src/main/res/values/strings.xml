@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Disaster_Checklist_v2</string>
+    <string name="Title">Disaster Relief Checklist!</string>
+    <string name="sub_title">Use this checklist, to make sure you\'re prepared!</string>
+    <string name="water">Water (1 gallon per person!)</string>
+    <string name="food">Food! one ration per person per meal!! You want enough for 3 days!</string>
+    <string name="radio">A battery powered radio, or a hand crank radio. A NOAA Weather Radio with tone alert is recommended.</string>
+    <string name="lights">Flashlights!!! (good idea to have more than one!)</string>
+    <string name="battery">Extra Batteries, for radio and flashlights</string>
+    <string name="whistle">A whistle to signal for help; this lets emergency responders know you are in distress</string>
+    <string name="dust_mask">A Dust mask; to help filter contaminated air</string>
+    <string name="plastic_duct">Plastic sheeting and duct tape to shelter in place.</string>
+    <string name="hygiene">Moist towletes, dry shampoo, mouthwash, and other personal hygiene items.</string>
+    <string name="waste">Garbage bags and plastic ties for personal sanitation</string>
+    <string name="tools">Wrench or Pliers to turn off utilities. Also any other tools you could think of.</string>
+    <string name="canopener">If your kit contains canned food, you\'ll need a can opener, so be sure to include one! (maybe even two to be safe)</string>
+    <string name="maps">Any Local maps that you may need. Its a good idea to print them out ahead of time.</string>
+    <string name="phone">Cell phones, chargers, and a backup portable charger are always a great tool. Just make sure they\'re charged!!</string>
+    <string name="checklist_menu">Checklist</string>
+</resources>
