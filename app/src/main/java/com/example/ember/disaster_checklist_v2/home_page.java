@@ -1,8 +1,7 @@
 package com.example.ember.disaster_checklist_v2;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.Menu;
+import android.support.v7.app.AppCompatActivity;
 
 public class home_page extends AppCompatActivity {
 
@@ -11,4 +10,5 @@ public class home_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
     }
+
 }
