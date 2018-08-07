@@ -1,5 +1,6 @@
 package com.example.ember.disaster_checklist_v2;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -33,7 +34,9 @@ public class menu_main extends AppCompatActivity {
         super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.checklist:
-               setContentView(R.layout.layout_listitem);
+               /*setContentView(R.layout.layout_listitem);*/
+                Intent intent = new Intent(menu_main.this, list_checklist.class);
+                startActivity(intent);
                return true;
                //original test to see if method worked
                 /*Toast.makeText(this, "Checklist", Toast.LENGTH_LONG).show();
