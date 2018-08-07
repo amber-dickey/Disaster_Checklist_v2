@@ -14,12 +14,12 @@ public class home_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
         Log.d(TAG, "onCreate: Starting.");
-        Button checklist = (Button) findViewById(R.id.checklist_button);
+        Button checklist = findViewById(R.id.checklist_button);
         checklist.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick: CLicked Checklist.");
-                Intent intent = new Intent(home_page.this, menu_main.class);
+                Intent intent = new Intent(home_page.this, list_checklist.class);
                 startActivity(intent);
             }
         });

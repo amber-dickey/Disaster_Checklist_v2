@@ -5,20 +5,18 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
 
 
 public class menu_main extends AppCompatActivity {
-    TextView waterValue;
-    int waterCounter = 0;
+  /*  TextView waterValue;
+    int waterCounter = 0;*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home_page);
 
-        waterValue = (TextView) findViewById(R.id.waterValue);
+        /*waterValue = (TextView) findViewById(R.id.waterValue);*/
     }
     //creates the options menu
     @Override
@@ -34,7 +32,6 @@ public class menu_main extends AppCompatActivity {
         super.onOptionsItemSelected(item);
         switch (item.getItemId()) {
             case R.id.checklist:
-               /*setContentView(R.layout.layout_listitem);*/
                 Intent intent = new Intent(menu_main.this, list_checklist.class);
                 startActivity(intent);
                return true;
@@ -44,7 +41,7 @@ public class menu_main extends AppCompatActivity {
                 }
         return true;
     }
-
+/*
     //increases the click of the water button
     public void increaseButton(View view) {
         waterCounter++;
@@ -54,5 +51,5 @@ public class menu_main extends AppCompatActivity {
     public void decreaseButton(View view) {
         waterCounter--;
         waterValue.setText(Integer.toString(waterCounter));
-    }
+    }*/
 }
