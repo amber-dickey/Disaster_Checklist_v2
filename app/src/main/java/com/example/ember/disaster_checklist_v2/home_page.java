@@ -19,7 +19,7 @@ public class home_page extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d(TAG, "onClick: CLicked Checklist.");
-                Intent intent = new Intent(home_page.this, list_checklist.class);
+                Intent intent = new Intent(home_page.this, itemRecyclerView.class);
                 startActivity(intent);
             }
         });

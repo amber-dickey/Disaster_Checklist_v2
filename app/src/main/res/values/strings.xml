@@ -13,12 +13,12 @@
     <string name="hygiene">Moist towletes, dry shampoo, mouthwash, and other personal hygiene items.</string>
     <string name="waste">Garbage bags and plastic ties for personal sanitation</string>
     <string name="tools">Wrench or Pliers to turn off utilities. Also any other tools you could think of.</string>
-    <string name="canopener">If your kit contains canned food, you\'ll need a can opener, so be sure to include one! (maybe even two to be safe)</string>
+    <string name="can_opener">If your kit contains canned food, you\'ll need a can opener, so be sure to include one! (maybe even two to be safe)</string>
     <string name="maps">Any Local maps that you may need. Its a good idea to print them out ahead of time.</string>
     <string name="phone">Cell phones, chargers, and a backup portable charger are always a great tool. Just make sure they\'re charged!!</string>
     <string name="checklist_menu">Checklist</string>
     <string name="checkbox1">CheckBox</string>
     <string name="increase">+</string>
     <string name="decrease">-</string>
-    <string name="waterValue">waterValue</string>
+    <string name="itemValue">0</string>
 </resources>

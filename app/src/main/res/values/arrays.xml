@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="list">
+        <item>@string/water</item>
+        <item>@string/food</item>
+        <item>@string/radio</item>
+        <item>@string/lights</item>
+        <item>@string/battery</item>
+        <item>@string/whistle</item>
+        <item>@string/dust_mask</item>
+        <item>@string/plastic_duct</item>
+        <item>@string/hygiene</item>
+        <item>@string/waste</item>
+        <item>@string/tools</item>
+        <item>@string/can_opener</item>
+        <item>@string/maps</item>
+        <item>@string/phone</item>
+    </array>
+
+</resources>
