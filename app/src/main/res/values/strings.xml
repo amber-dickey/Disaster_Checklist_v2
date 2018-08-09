@@ -21,4 +21,8 @@
     <string name="increase">+</string>
     <string name="decrease">-</string>
     <string name="itemValue">0</string>
+    <string name="per_checklist">Add Items</string>
+    <string name="message">Enter new list items (you can enter multiple items)</string>
+    <string name="add">Add item</string>
+    <string name="item_prepared">Item Prepared</string>
 </resources>

@@ -7,38 +7,43 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
 
+
 public class RecyclerViewAdaptor extends RecyclerView.Adapter<RecyclerViewAdaptor.ViewHolder>{
     private static final String TAG = "RecyclerViewAdaptor";
-
     private String[] mItemNames;
-    private ArrayList<Integer> mItemValues = new ArrayList<>();
     private Context mContext;
+    private ArrayList<Boolean> booleans = new ArrayList<>();
 
-    public RecyclerViewAdaptor(Context mContext, String[] mItemNames, ArrayList<Integer> mItemValues) {
+
+    RecyclerViewAdaptor(Context mContext, String[] mItemNames) {
         this.mItemNames = mItemNames;
-        this.mItemValues = mItemValues;
         this.mContext = mContext;
+
+        for (int i = 0; i < mItemNames.length; i++) {
+            booleans.add(false);
+        }
     }
 
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.layout_listitem, parent, false);
-        ViewHolder holder = new ViewHolder(view);
-        return holder;
+        return new ViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         Log.d(TAG, "onBindViewHolder: called.");
         holder.itemName.setText(mItemNames[position]);
-        holder.itemValues.setText((mItemValues.get(position).toString()));
+        holder.bind(position);
+
+
 
     }
 
@@ -47,20 +52,36 @@ public class RecyclerViewAdaptor extends RecyclerView.Adapter<RecyclerViewAdapto
         return mItemNames.length;
     }
 
-    public class ViewHolder extends RecyclerView.ViewHolder {
+    class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView itemName;
-        TextView itemValues;
+
         RelativeLayout parentLayout;
-        Button increaseButton;
-        Button decreaseButton;
-        public ViewHolder(View itemView) {
+        CheckBox checkbox;
+        ViewHolder(View itemView) {
             super(itemView);
             itemName = itemView.findViewById(R.id.item_Name);
-            itemValues = itemView.findViewById(R.id.item_Value);
-            increaseButton = itemView.findViewById(R.id.button_Increase);
-            decreaseButton = itemView.findViewById(R.id.button_Decrease);
             parentLayout = itemView.findViewById(R.id.parent_layout);
+            checkbox= itemView.findViewById(R.id.checkBox);
+
+
+
+//            itemView.setOnClickListener(this);
+            this.setIsRecyclable(false);
         }
-    }
-}
+        void bind(int position) {
+            if (booleans.get(position)) {
+                checkbox.setChecked(true);
+            }
+
+            checkbox.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+
+                    int adapterPosition = getAdapterPosition();
+                    booleans.set(adapterPosition,checkbox.isChecked());
+                }
+            });
+        }
+
+}}

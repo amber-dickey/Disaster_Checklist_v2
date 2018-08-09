@@ -2,12 +2,13 @@
 
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
+    android:layout_height="155dp"
+    android:background="@android:color/holo_green_dark"
+    android:padding="15dp">
 
-    android:padding="15dp"
-    android:id="@+id/parent_layout">
-    <!--text for water-->
     <TextView
         android:id="@+id/item_Name"
         android:layout_width="184dp"
@@ -15,44 +16,20 @@
         android:layout_centerHorizontal="false"
         android:layout_centerInParent="false"
         android:layout_centerVertical="true"
-        android:gravity="center_horizontal"
+        android:gravity="center"
         android:text="@string/water"
         android:textColor="#000"
         android:textSize="18sp" />
-    <!--decreases water count-->
-    <Button
-        android:id="@+id/button_Decrease"
-        android:layout_width="39dp"
-        android:layout_height="38dp"
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="13dp"
+        android:text="@string/item_prepared"
         android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:text="@string/increase"
-        android:onClick="decreaseButton"/>
-    <!--increases water count-->
-    <Button
-        android:id="@+id/button_Increase"
-        android:layout_width="39dp"
-        android:layout_height="38dp"
-        android:layout_alignParentTop="true"
-        android:layout_toEndOf="@+id/item_Name"
-        android:layout_toRightOf="@+id/item_Name"
-        android:text="@string/decrease"
-        android:onClick="increaseButton"/>
-    <!--displays item value-->
-    <TextView
-        android:id="@+id/item_Value"
-        android:layout_width="58dp"
-        android:layout_height="39dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignTop="@+id/item_Name"
-        android:layout_marginEnd="55dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="55dp"
-        android:ems="10"
-        android:gravity="center_vertical|center_horizontal|center"
-        android:text="@string/itemValue"
-        android:textColor="#000"
-        android:textSize="18sp"
-    />
+        android:layout_marginRight="13dp"
+        tools:ignore="RelativeOverlap" />
 </RelativeLayout>

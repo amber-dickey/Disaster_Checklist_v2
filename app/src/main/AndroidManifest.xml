@@ -16,9 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".list_checklist"></activity>
-        <activity android:name=".itemRecyclerView"></activity>
+        <activity android:name=".itemRecyclerView" />
+        <activity android:name=".personalized_list" />
+        <activity android:name=".DisplayListItem"></activity>
     </application>
-
 
 </manifest>

@@ -23,6 +23,17 @@ public class home_page extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button newList = findViewById(R.id.addItemsButton);
+        newList.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: CLicked new list.");
+                    Intent intent = new Intent(home_page.this, personalized_list.class);
+                    startActivity(intent);
+                }
+
+
+        });
 
 
     }
