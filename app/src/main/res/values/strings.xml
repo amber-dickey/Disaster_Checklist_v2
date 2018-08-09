@@ -25,4 +25,6 @@
     <string name="message">Enter new list items (you can enter multiple items)</string>
     <string name="add">Add item</string>
     <string name="item_prepared">Item Prepared</string>
+    <string name="list">com.example.ember.disaster_checklist_v2.SharedPreference.list</string>
+    <string name="clear_previous_data">Clear Previous Data</string>
 </resources>
