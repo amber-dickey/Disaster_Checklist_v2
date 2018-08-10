@@ -20,11 +20,15 @@
     <string name="checkbox1">CheckBox</string>
     <string name="increase">+</string>
     <string name="decrease">-</string>
-    <string name="itemValue">0</string>
+    <string name="waterValue">0</string>
+    <string name="foodValue">0</string>
     <string name="per_checklist">Add Items</string>
     <string name="message">Enter new list items (you can enter multiple items)</string>
     <string name="add">Add item</string>
     <string name="item_prepared">Item Prepared</string>
     <string name="list">com.example.ember.disaster_checklist_v2.SharedPreference.list</string>
     <string name="clear_previous_data">Clear Previous Data</string>
+    <string name="quantity">how much???</string>
+    <string name="howMuchWater">How many gallons of water do you have?</string>
+    <string name="foodRations">How many food rations?</string>
 </resources>

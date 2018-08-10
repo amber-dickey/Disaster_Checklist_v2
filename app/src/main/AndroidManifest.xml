@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".itemRecyclerView" />
         <activity android:name=".personalized_list" />
-        <activity android:name=".DisplayListItem"></activity>
+        <activity android:name=".DisplayListItem" />
+        <activity android:name=".Quantity"></activity>
     </application>
 
 </manifest>

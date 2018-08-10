@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/holo_orange_light">
@@ -9,27 +10,28 @@
         android:id="@+id/addItemsButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/edit_list"
+        android:layout_alignBaseline="@+id/edit_list"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignRight="@+id/edit_list"
-        android:layout_marginEnd="38dp"
-        android:layout_marginRight="38dp"
-        android:background="@color/colorPrimaryDark"
+        android:layout_marginEnd="25dp"
+        android:background="@color/colorPrimary"
         android:onClick="sendListItem"
         android:text="@string/add"
-        android:textColor="@android:color/holo_orange_dark" />
+        android:textColor="@android:color/holo_orange_dark"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="25dp" />
 
     <EditText
         android:id="@+id/edit_list"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="29dp"
         android:ems="10"
         android:hint="@string/message"
-        android:inputType="textMultiLine" />
+        android:inputType="textMultiLine"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="24dp" />
 
 </RelativeLayout>

@@ -49,5 +49,14 @@ public class home_page extends AppCompatActivity {
                 preferencesEditor.apply();
             }
         });
+        Button quantity = findViewById(R.id.quantity);
+        quantity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Log.d(TAG, "onClick: CLicked how many.");
+                Intent intent = new Intent(home_page.this, Quantity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
